@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdio_ext.h>
+#include <stdlib.h>
+
+
+int getInt(	int *pValor, char *pMSG, char *pErr,
+			int rangoMin, int RangoMax, int retry)
+{
+	int retorno = -1;
+	int aux;
+
+	do
+	{
+		printf("%s",pMSG);
+		__fflush(stdin);
+		if(scanf("%d",&aux)==1 && aux >= rangoMin && aux <= rangoMax)
+		{
+			*pValor = aux;
+			retorno = 0;
+			break;
+		}
+
+		printf("%s",pMensajeError);
+		reintentos--;
+	}while(reintentos >= 0);
+	return retorno;
+}
+
+
+
+
+
+
+
+
+
+
+
+

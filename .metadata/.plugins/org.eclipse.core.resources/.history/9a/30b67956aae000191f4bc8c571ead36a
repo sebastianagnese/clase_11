@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <stdio_ext.h>
+#include <stdlib.h>
+
+
+int getInt(	int *pValor, char *pMSG, char *pMSGErr,
+			int rangoMin, int rangoMax, int retry)
+{
+	int retorno = -1;
+	int aux;
+
+	do
+	{
+		printf("%s",pMSG);
+		__fpurge(stdin);
+		scanf("%d",&aux);
+		if(aux >= rangoMin && aux <= rangoMax)
+		{	//then
+			*pValor = aux;
+			retorno = 0;
+			break;
+		}
+		else
+		{
+			printf("%s",pMSGErr);
+		}
+
+		retry--;
+
+	}while(retry >= 0);
+
+	return retorno;
+}
+
+int initArrayInt(int *pArray , int limit, int valor)
+{
+	int retorno = -1;
+	int i;
+
+	if(pArray != NULL && limit > 0)
+	{
+		for(i=0; i<limit; i++)
+		{
+			pArray[i]=valor;
+		}
+
+		retorno = 0;
+	}
+
+	return retorno;
+}
+
+int printArrayInt(int *pArray , int limit)
+{
+	int retorno = -1;
+	int i;
+
+	if(pArray != NULL && limit > 0)
+	{
+		for(i=0;i<limit;i++)
+		{
+			printf("\n\t%i",pArray[i]);
+		}
+		retorno = 0;
+	}
+	return retorno;
+}
+
+
+
+
+
+
+
+
+
+
+
+

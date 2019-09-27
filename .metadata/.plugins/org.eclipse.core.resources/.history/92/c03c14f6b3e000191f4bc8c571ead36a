@@ -1,0 +1,27 @@
+/*
+ ============================================================================
+ Name        : bibliotecas.c
+ Author      : agn
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	return 0;
+}
+
+ HELP FOR THE FAKE TP
+
+typedef struct1
+{
+
+}
+
+typedef struct2
+

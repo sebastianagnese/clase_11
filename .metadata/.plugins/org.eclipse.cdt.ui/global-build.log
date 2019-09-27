@@ -1,0 +1,22 @@
+21:31:45 **** Incremental Build of configuration Debug for project bibliotecas ****
+make all 
+Building file: ../src/bibliotecas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/bibliotecas.d" -MT"src/bibliotecas.o" -o "src/bibliotecas.o" "../src/bibliotecas.c"
+../src/bibliotecas.c: In function ‘main’:
+../src/bibliotecas.c:42:11: warning: variable ‘q’ set but not used [-Wunused-but-set-variable]
+  int *p, *q;
+           ^
+../src/bibliotecas.c:44:5: warning: ‘p’ is used uninitialized in this function [-Wuninitialized]
+  *p = x;
+  ~~~^~~
+Finished building: ../src/bibliotecas.c
+ 
+Building target: bibliotecas
+Invoking: GCC C Linker
+gcc  -o "bibliotecas"  ./src/agn_gets.o ./src/bibliotecas.o   
+Finished building target: bibliotecas
+ 
+21:31:49 **** Incremental Build of configuration Debug for project bibliotecas ****
+make all 
+make: No se hace nada para 'all'.

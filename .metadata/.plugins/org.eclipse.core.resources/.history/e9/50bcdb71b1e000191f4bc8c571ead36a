@@ -1,0 +1,20 @@
+/*
+ * agn_bibliotecas.h
+ *
+ *  Created on: 26 sep. 2019
+ *      Author: alumno
+ */
+
+#ifndef AGN_GETS_H_
+#define AGN_GETS_H_
+
+int getInt(	int *pValor, char *pMSG, char *pMSGErr,
+			int rangoMin, int rangoMax, int retry);
+
+int initArrayInt(int *pArray, int limit, int valor);
+
+int printArrayInt(int *pArray, int limit);
+
+
+
+#endif /* AGN_GETS_H_ */
